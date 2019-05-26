@@ -1,3 +1,3 @@
 题目：数学模型与数学建模书的$p.138\quad t.4$
 解析：
-    设$x_{ij}=\begin{cases}1\quad 若第i个人做第j件事\\0 \quad若第j个人做第j件事\end{cases}$
+    设$x_{ij}=\begin{cases}1\quad 若第i个人做第j件事\\0 \quad若第j个人不做第j件事\end{cases}$,$i,j=1,2,\ldots,n,$
