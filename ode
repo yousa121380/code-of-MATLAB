@@ -7,7 +7,7 @@ $(2).\quad \begin{cases}\frac{dx}{dt}+2x-\frac{dy}{dt}=10\cos{t},\quad x|_{t=0}=
 $3\\(1).\quad \frac{d^2x}{dt^2}-3\frac{dx}{dt}+2x=1,x(0)=1,x'(0)=0$
 $(2).\quad \frac{d^2x}{dt^2}-2(1-x^2)\frac{dx}{dt}+x=0,x(0)=1,x'(0)=0$
 $(3).\quad y''-(1-y^2)y'+y=0\quad y|_{x=0}=0 \quad y'|_{x=0}=-0.5$求其在区间[0，20]上的近似解
-
+$p.s.$后面两个问题似乎无解
 syms y(x);
 eqn1=diff(y,x)==1/(x+y);
 dsolve(eqn1)
