@@ -1,4 +1,4 @@
-$$\sum_{i=0}^N{X_i}$$
+$\sum_{i=0}^N{X_i}$
 clear;
 close all;
 clc;
