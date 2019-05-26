@@ -4,7 +4,9 @@ $(2).\quad y=xy'-(y')^2$
 $(3).\quad xy''-3y'=x^2,y(1)=0,y(5)=0$
 $2\\(1).\quad \begin{cases}\frac{dx}{dt}+5x+y=e^t \\\frac{dy}{dt}-x-3y=0\end{cases} \quad x|_{t=0}=1,y|_{t=0}=0$
 $(2).\quad \begin{cases}\frac{dx}{dt}+2x-\frac{dy}{dt}=10\cos{t},\quad x|_{t=0}=2\\ \frac{dx}{dt}+\frac{dy}{dt}+2y=4e^{-2t},\quad y|_{t=0}=0\end{cases}$
-
+$3\\(1).\quad \frac{d^2x}{dt^2}-3\frac{dx}{dt}+2x=1,x(0)=1,x'(0)=0$
+$(2).\quad \frac{d^2x}{dt^2}-2(1-x^2)\frac{dx}{dt}+x=0,x(0)=1,x'(0)=0$
+$(3).\quad y''-(1-y^2)y'+y=0\quad y|_{x=0}=0 \quad y'|_{x=0}=-0.5$求其在区间[0，20]上的近似解
 
 syms y(x);
 eqn1=diff(y,x)==1/(x+y);
