@@ -1,8 +1,5 @@
 $\sum_{i=0}^N{X_i}$
-$$\begin{bmatrix}
-a_{00}&a_{01}\\
-a_{10}&a_{11}\\
-\end{bmatrix}$$
+$$\begin{bmatrix}a_{00}&a_{01}\\a_{10}&a_{11}\\\end{bmatrix}$$
 clear;
 close all;
 clc;
