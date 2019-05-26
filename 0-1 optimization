@@ -1,5 +1,6 @@
-$\sum_{i=0}^N{X_i}$
-$\begin{bmatrix}a_{00}&a_{01}\\a_{10}&a_{11}\\\end{bmatrix}$
+题目：数学模型与数学建模书的$p.138\quadt.4$
+解析：
+
 clear;
 close all;
 clc;
