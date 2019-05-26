@@ -1,4 +1,11 @@
-$\quad$
+$\[
+|x| = \left\{
+\begin{array}{rl}
+-x & \text{if } x < 0,\\
+0 & \text{if } x = 0,\\
+x & \text{if } x > 0.
+\end{array} \right.
+\]$
 
 clear;
 close all;
