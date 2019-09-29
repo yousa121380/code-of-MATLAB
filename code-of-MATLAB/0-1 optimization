@@ -1,0 +1,42 @@
+一道图论的题目
+
+
+matlab代码：
+clear;
+close all;
+clc;
+M = 10000;
+W = [0, 20, 15, M, M, M, M; M, 0, M, 8, 24, M, M; M, M, ...
+0, 10, M, 6, M; M, M, M, 0, 10, 8, M; M, M, M, M, ...
+0, M, 11; M, M, M, M, M, 0, 20; M, M, M, M, M, M, M];
+n = length(W); 
+A = zeros(n, n*n);
+intcon=1:49;
+for i = 1:n
+    e1 = zeros(1, n);
+    e1(i) = 1;
+    e2 = -1*ones(1, n);
+    e2(i) = 0;
+    A(i, :) = repmat(e1, 1, n);
+    A(i, (i-1)*n+1:i*n) = e2;
+end
+b = zeros(n, 1);
+b(1) = 1;
+b(end) = -1;
+lb=zeros(49,1);
+ub=ones(49,1);
+x = intlinprog(W,intcon,[],[],A,b,lb,ub);
+y = reshape(x, n, n)
+
+lingo代码：
+sets:
+cities/v1,v2,v3,v4,v5,v6,v7/;
+roads(cities, cities)/v1,v2 v1,v3 v2,v4 v2,v5 v3,v4 v3,v6
+v4,v5 v4,v6 v5,v7 v6,v7/: w, x;
+endsets
+data: w = 20 15 8 24 10 6 10 8 11 20; enddata
+n=@size(cities);
+min=@sum(roads: w*x);
+@for(cities(i) | i #ne# 1 #and# i #ne# n:
+@sum(roads(i,j): x(i,j)) = @sum(roads(j,i): x(j,i)));
+@sum(roads(i,j)|i #eq# 1 : x(i,j))=1;
